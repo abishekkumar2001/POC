@@ -1,0 +1,22 @@
+debug: false
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/soc
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+
+  jackson:
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+
+#  security:
+#    user:
+#      name: user
+#      password: user
